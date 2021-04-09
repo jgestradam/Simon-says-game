@@ -6,12 +6,12 @@
         background: #dedede;
         display: flex;
         align-items: center;
-        height: 100vh;
+        height: 80vh;
       }
 
       .gameboard {
-        height: 100vh;
-        width: 100vh;
+        height: 80vh;
+        width: 80vh;
         border-radius: 50%;
         overflow: hidden;
         margin: 0 auto;
@@ -72,11 +72,11 @@
       background: #ecf0f1;
       color: #2c3e50;
       border: none;
-      border-bottom: 4px solid #c4c6c7;
+      /* border-bottom: 4px solid #c4c6c7; */
       border-radius: 8px;
       font-size: 3em;
       position: absolute;
-      top: calc(50% - 50px);
+      top: calc(50% - 110px);
       left: calc(50% - 210px);
       transition: .5s;
       outline: none;
