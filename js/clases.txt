@@ -1,0 +1,37 @@
+El boton empezar va a llamar la funcion empezar juego, hacemos la funcion empezarJuego, al principio solo lo que hacemos es poner un aviso de alert para verificar que el click funciona.
+
+function empezarJuego() { //Es la forma en a que podemos llamar una funcion de la clase desde HTML
+    alert(' El juego va a empezar' )
+     var juego = new Juego()
+}
+Lo primero que queremos hacer es iniciar el juego, hacemos la variable juego y la clase juego, definimos un constructor y llamamos a la funcion inicializar, esta funion lo priomero que va a hacer es ocultar el boton de inicializar, recordemos que todos los elementos del HTML los podemos modificar desde el JS.
+
+class Juego { //Es la clase que va a tener toda la lógica del juego
+    constructor() {
+        this.inicializar
+    }
+    inicializar() {
+        
+    }
+}
+Para obtener el boton ,lo haremos por fuera de la clase en una constante llamada BtnEmpezar y llamamos document.getElementById, lo que hace esa funcion es recibir un String con el ID del elemento que queremos obtener, en este cado el ID es el btnEmpezar.
+
+const btnEmpezar = document.getElementById('btnEmpezar')
+La variable btnEmpezar la usamos en el espacio global y esta disponible para usar, haremos el mismo procedimiento para los demas botones.
+
+const celeste = document.getElementById('celeste')
+const violeta = document.getElementById('violeta')
+const naranja = document.getElementById('naranja')
+const verde = document.getElementById('verde')
+const btnEmpezar = document.getElementById('btnEmpezar')
+Lo primero que haremos es ocultar el btnEmpezar, en inicializar tomaremos el btnEmpezar y a las clases de CSS que tiene le agregaremos una que es hide. esto lo hacemos con la funcion classList.add. La clase esta en el CSS y le agrega un display none al elemento.
+
+class Juego {
+  constructor() {
+    this.inicializar()
+  }
+
+  inicializar() {
+    btnEmpezar.classList.add('hide')
+  }
+} 
